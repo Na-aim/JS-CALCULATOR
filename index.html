@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-</head>
-<body>
-    <script src="index.js"></script>
-</body>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .calculator {
+        height: 20vh;
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wam">
+      <div class="container">
+        <div class="calculator p-5 mx- auto">
+          <div id="output" class="border border primary mb-3 h-50 p-3"></div>
+          <div class="calculator-keys">
+            <div class="row mb-3">
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('1')">
+                  1
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('2')">
+                  2
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('3')">
+                  3
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('4')">
+                  4
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('5')">
+                  5
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('6')">
+                  6
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('7')">
+                  7
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('8')">
+                  8
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('9')">
+                  9
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('0')">
+                  0
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('-')">
+                  -
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('+')">
+                  +
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('*')">
+                  *
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('/')">
+                  /
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="addtosum('.')">
+                  .
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="evaluateSum('')">
+                  =
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="deleteChar('')">
+                  DEL
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn w-100 btn primary" onclick="clearSum('')">
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
 </html>
